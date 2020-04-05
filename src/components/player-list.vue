@@ -1,7 +1,7 @@
 <template>
   <section>
     <h1>list</h1>
-    <video-preview v-for="(idx, video) in testVids" :key="idx" :video="video"></video-preview>
+    {{videos}}
   </section>
 </template>
 
@@ -9,7 +9,7 @@
 import videoPreview from "./video-preview";
 export default {
   props: {
-    videos: { Array }
+    videos: Array 
   },
   data() {
     return {
