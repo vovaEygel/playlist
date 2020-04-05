@@ -1,21 +1,21 @@
 <template>
   <section class="search-bar">
-    <input class="video-search" type="text" placeholder="Search on youtube" v-model="searchTxt" />
-    <button class="search-btn" @click="search">Search</button>
+    <h1>search</h1>
+    <input class="video-search" type="text" v-model="userSearch" />
+    <button class="search-btn" @click="searchVideos">Search</button>
   </section>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      userSearch: ""
+    };
+  },
   methods: {
-    data() {
-      return {
-        searchTxt: ""
-      };
-    },
-    search() {
-      console.log(this.searchTxt);
-      // this.$store.dispatch("search");
+    searchVideos() {
+      this.$emit("search-videos", this.userSearch);
     }
   }
 };
