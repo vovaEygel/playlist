@@ -1,4 +1,30 @@
-
+.video-preview {
+  // border: 2px solid black;
+  margin-bottom: 20px;
+  img {
+    max-width: 250px;
+  }
+  .video-info {
+    margin-left: 10px;
+    h1 {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    p {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+  }
+  button {
+    align-self: baseline;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
 
 
 
