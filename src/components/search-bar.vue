@@ -1,13 +1,24 @@
 <template>
   <section class="search-bar">
-    <h1>search</h1>
-    <input class="video-search" type="text" />
-    <button class="search-btn">Search</button>
+    <input class="video-search" type="text" placeholder="Search on youtube" v-model="searchTxt" />
+    <button class="search-btn" @click="search">Search</button>
   </section>
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    data() {
+      return {
+        searchTxt: ""
+      };
+    },
+    search() {
+      console.log(this.searchTxt);
+      // this.$store.dispatch("search");
+    }
+  }
+};
 </script>
 
 <style>

@@ -1,0 +1,16 @@
+.search-bar {
+    text-align: center;
+    input,
+    .search-btn {
+        border: 0;
+        width: 200px;
+        height: 30px;
+        border-radius: 20px;
+    }
+    .video-search {
+        padding-left: 5px;
+    }
+    .search-btn {
+        margin-left: 10px;
+    }
+}

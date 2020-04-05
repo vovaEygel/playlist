@@ -1,8 +1,10 @@
 <template>
-  <div class="home">
+  <div class="player-app">
     <search-bar></search-bar>
-    <player-list></player-list>
-    <player-window></player-window>
+    <div class="player flex row">
+      <player-list></player-list>
+      <player-window></player-window>
+    </div>
   </div>
 </template>
 
