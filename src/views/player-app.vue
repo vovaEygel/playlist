@@ -20,12 +20,12 @@ export default {
   },
   computed: {
     videoList() {
-      return this.$store.getters.getList
+      return this.$store.getters.getList;
     }
   },
   methods: {
     async getVideosList(userSearch) {
-      this.$store.dispatch({ type: 'getVideos', userSearch })
+      this.$store.dispatch({ type: "getVideos", userSearch });
     }
   }
 };
