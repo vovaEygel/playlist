@@ -1,7 +1,7 @@
 <template>
   <section class="search-bar">
     <h1>search</h1>
-    <input class="video-search" type="text" v-model="userSearch"/>
+    <input class="video-search" type="text" v-model="userSearch" />
     <button class="search-btn" @click="searchVideos">Search</button>
   </section>
 </template>
@@ -10,12 +10,12 @@
 export default {
   data() {
     return {
-      userSearch: ''
-    }
+      userSearch: ""
+    };
   },
   methods: {
     searchVideos() {
-      this.$emit('search-videos', this.userSearch);
+      this.$emit("search-videos", this.userSearch);
     }
   }
 };
